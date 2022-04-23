@@ -1,0 +1,23 @@
+.headerOption{
+    display: flex;
+    flex-direction: column; /*Arrange the icon and title to show column (Icon top, title bottom)*/
+    align-items:center; /*Align the icon to center of flex box*/
+    margin-right: 20px; /*Give each flexbox a 20px right margin*/
+    color: grey; /*Give each flexbox of grey color*/
+}
+
+.headerOption_title{
+    font-size: 12px; /*Make the font size smaller*/
+    font-weight: 400; /*Make the font not bold*/
+}
+
+.headerOption_icon{
+    object-fit: contain;
+    height: 25px !important; /*Override material UI avatar's css*/
+    width: 25px !important; /*Override material UI avatar's css*/
+}
+
+.headerOption:hover{
+    color: black; /*On hover show black color*/
+    cursor: pointer; /*Show mouse pointer when hover over it*/
+}

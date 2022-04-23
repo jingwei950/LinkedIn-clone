@@ -1,0 +1,41 @@
+.header {
+    position: sticky; /* Stick header to the top */
+    top: 0; /*When get past that point it will stay at the top*/
+    display: flex; /*Make everything go into a row*/
+    justify-content: space-evenly; /*Make the items in header to space evenly*/
+    background-color: white; /*Back the background color white so thar search bar can be seen*/
+    border-bottom: 0.1px solid lightgray;
+    padding: 10px 0px 10px 0px; /*Give the padding of top and botton of 10px*/
+    width: 100%; /*Make sure the width is 100%*/
+    z-index: 999; /*Make sure header shows in front of everything*/
+}
+
+.header_left{
+    display: flex; /*Make items inside left header align side by side*/
+}
+
+.header_left > img{ /*Inside header_left target image tag*/
+    object-fit: contain; /*When resize keep the aspect ratio*/
+    height: 40px;
+    margin-right: 10px; /*Give the LinkedIn icon a right margin of 10px*/
+}
+
+.header_search{
+    padding: 10px; /*Add a 10px padding for search icon and input field*/
+    display: flex; /*Make search icon and input field display flex*/
+    align-items: center; /*Align all the items center*/
+    border-radius: 5px; /*Back the border of search bar including the icon have a round border*/
+    height: 22px;
+    color: gray; /*Give the search icon a gray color*/
+    background-color: #eef3f8; /*Give the background color a #eef3f8*/
+}
+
+.header_search > input{ /*Target the input textbox in header_search*/
+    outline: none; /*Make the outline not show when you click on the input*/
+    border: none; /*Make the border not show of input*/
+    background: none; /*Make the background not show*/
+}
+
+.header_right{
+    display: flex;
+}

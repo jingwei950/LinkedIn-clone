@@ -1,0 +1,55 @@
+.login{
+    display: grid;
+    place-items: center;
+    margin-left: auto; /*Make sure it is centered with margin-right*/
+    margin-right: auto; /*Make sure it is centered with margin-left*/
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.login > img {
+    object-fit: contain; /*Scale the image to its aspect ratio while fitting within the container*/
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login > form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login > form > input{
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.login > form > input:focus{
+    outline: none !important;
+    border: 2px solid #0867C2;
+}
+
+.login > form > button {
+ width: 365px;
+ height: 50px;
+ font-size: large;
+ color: #fff;
+ background-color: #0074b1;
+ border-radius: 30px;  
+ border: none;
+}
+
+.login_register{
+    color: #0074b1;
+    cursor: pointer;
+}
+
+.login > form > p {
+    margin-top: 20px; 
+}

@@ -1,0 +1,105 @@
+.sidebar{
+    position: sticky;
+    top: 80px;
+    flex: 0.2; /*Give the side bar take up 20% of screen*/
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+}
+
+.sidebar_avatar{
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.sidebar_top > h4{
+    color: gray;
+    font-size: 12px;
+}
+
+.sidebar_top > h2{
+    font-size: 18px;
+}
+
+.sidebar_top{
+    display: flex;
+    flex-direction: column; /*Align items from top to bottom*/
+    align-items: center;    /*Align items in the center*/
+    border: 1px solid lightgray; /*Make the line of border appear with lightgray color*/
+    border-bottom: 0;       /*Remove the bottom border's line*/
+    border-top-left-radius: 10px; /*Give the top left of border a radius of 10px*/
+    border-top-right-radius: 10px;/*Give the top right of border a radius of 10px*/
+    background-color: white;    /*Give the back ground of sidebar top white*/
+    padding-bottom: 10px;         /*Give the sidebar top a 10px botton padding*/
+}
+
+.sidebar_top > img{
+    margin-bottom: -20px; /*Push the avatar into the background image for a bit*/
+    width: 100%; /*Make the image fit into the sidebar_top div container*/
+    height: 60px;
+    border-top-left-radius: 10px; /*Give the top left of border a radius of 10px*/
+    border-top-right-radius: 10px;/*Give the top right of border a radius of 10px*/
+    object-fit: cover; /*Make the background image don't look so stretched*/
+}
+
+.sidebar_stats{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-bottom-left-radius: 10px; /*Give the bottom left of border a radius of 10px*/
+    border-bottom-right-radius: 10px;/*Give the bottom right of border a radius of 10px*/
+}
+
+.sidebar_stat{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar_stat > p{
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sidebar_statNumber{
+    font-weight: bold ;
+    color: #0a66c2 !important;
+}
+
+.sidebar_bottom{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sidebar_recentItem{
+    display: flex;
+    font-size: 13px;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.sidebar_bottom > p{
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.sidebar_recentItem:hover{
+    background-color:whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color:black;
+}
+
+.sidebar_hash{
+    margin-right: 10px;
+    margin-left: 5px;
+}
