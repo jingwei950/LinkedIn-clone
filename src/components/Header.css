@@ -20,6 +20,10 @@
     margin-right: 10px; /*Give the LinkedIn icon a right margin of 10px*/
 }
 
+.header_svg{
+    margin-right: 4px;
+}
+
 .header_search{
     padding: 10px; /*Add a 10px padding for search icon and input field*/
     display: flex; /*Make search icon and input field display flex*/

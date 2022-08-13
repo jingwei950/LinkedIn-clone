@@ -30,7 +30,17 @@ function Header() {
       <div className="header_left">
         
         {/*If there's user show "In" icon, if not show "LinkedIn"*/
-          user ? <img src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1650541354~hmac=15040b07124146c632ea3f929e100308" alt="" />
+          user ? 
+          <div className="header_svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" color="#0967C3" viewBox="0 0 34 34" class="global-nav__logo">
+              <title>
+                LinkedIn
+              </title>
+              <g>
+                <path d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z" fill="currentColor"></path>
+              </g>
+            </svg>
+          </div>
           : 
           <img src="https://news.hitb.org/sites/default/files/styles/large/public/field/image/500px-LinkedIn_Logo.svg__1.png?itokwq_lR0Vks" alt="" /> 
         }
